@@ -1,0 +1,263 @@
+img {
+    max-width: 100%;
+    margin: auto;
+}
+li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+body {
+    margin: 0;
+    padding: 0;
+    
+}
+
+/* Title ====================================== */
+.site-title {
+    max-width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: -25%;
+    left: 0;
+    right: 0;
+    
+}
+
+.world {
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4rem;
+    font-weight: 900;
+    text-align: right;
+    letter-spacing: -0.3rem;
+}
+.beats {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 4rem;
+    text-align: left;
+    letter-spacing: -0.3rem;
+}
+header{
+    background-color: black; 
+    position: relative;  
+    padding-bottom: 15px;
+}
+h1 {
+    color: white;
+}
+/* Nav ====================================================== */
+header nav {
+    padding-top: 50px;
+}
+nav {
+    width: 80%;
+    margin: auto;
+}
+.main-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 0;
+}
+.main-menu a {
+    padding: 10px;
+    display: block;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+.main-menu li {
+    text-align: center;
+    font-size: 0.8rem;
+}
+.menu-social-search li {
+    display: inline-block;
+}
+.menu-social-search {
+    text-align: center;
+    padding-left: 0;
+    margin-bottom: 30px;
+}
+.menu-social-search li a i {
+    color: white;
+    padding: 5px;
+    display: block;
+}
+
+ /*Feature Section =================================================  */
+ .feature-section {
+    margin-top: 1px; 
+   margin-bottom: 20px;
+}
+
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3.5rem;
+    font-weight: 200;
+    margin: 30px auto;
+}
+.feature-text {
+    max-width: 90%;
+    margin: auto;
+}
+h3 {
+    font-size: 1.5rem;
+}
+.feature-text p {
+    font-size: 1.3rem;
+}
+.abdel-image {
+    text-align: center;
+}
+.abdel-image img {
+    border-radius: 50%;
+}
+figcaption div span {
+    font-weight: bold;
+}
+/* New releases Section ================================= */
+.new-releases-title {
+    font-weight: 900;
+    text-align: center;
+    background-color: rgb(241, 242, 247);
+    padding: 30px;
+    margin: 0px auto;
+    font-size: 3rem;
+}
+.new-releases article {
+    position: relative;
+}
+.new-releases article h4 {
+    position: absolute;
+    top: 0;
+    left:0;
+    right:0;
+    background-color: rgba(0,0,0,0.7);
+    color: white;
+    margin-top: 0;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+.new-releases article p {
+    padding: 10px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px ;
+}
+/* Medium Sized Screens============================== */
+@media screen and (min-width: 768px) {
+    .feature-text {
+        max-width: 70%;
+        margin: auto;
+    } 
+.new-releases {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    background-color: rgb(241, 242, 247);
+}
+.new-releases-title {
+    grid-column: span 2;
+    margin:0;
+}
+.new-releases article {
+    background-color: rgba(140, 134, 161, 0.4);
+    margin-top:0;
+    margin-bottom: 10px;
+}
+.new-releases article p {
+    margin: 0 0 10px 0;
+    line-height: 1.5;
+}
+}
+
+/* ------------------------------------------ */
+/* large sized screens ===================== */
+@media screen and (min-width: 1000px) {
+    
+.new-releases {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 10px;
+    background-color: rgb(241, 242, 247);
+}
+.new-releases-title {
+    grid-column: span 4;
+    margin:0;
+}
+.new-releases article {
+    background-color: rgba(140, 134, 161, 0.4);
+    margin-top:0;
+    margin-bottom: 10px;
+}
+.new-releases article p {
+    margin: 0 0 10px 0;
+    line-height: 1.5;
+}
+.feature-section {
+    position: relative;
+}
+.feature-text {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%;
+}
+.feature-large {
+
+    position: absolute;
+    left:0;
+    right: 0;
+    top: 90%;
+}
+.feature-words {
+    width: 600px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+.feature-words p {
+    font-size: 1rem;
+}
+.feature-section{
+    margin: auto;
+}
+.new-releases {
+    margin-top: 700px;
+}
+header nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 1px solid white;
+}
+nav ul {
+    margin-bottom: 0;
+    margin-left: 10px;
+}
+.menu-social-search {
+    margin-bottom: 5px;
+    margin-right: 10px;
+}
+.main-menu a {
+    padding: 5px 20px 5px 5px;
+}
+header {
+    padding-bottom: 0;
+}
+h1 {
+    margin: 0;
+}
+}
